@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  html, body {
+    font-family: 'Poppins', 'roboto';
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* Header */
+  header {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #A61723;
+  }
+
+/* hr border */
+  hr{
+    border: 2px solid #A61723;
+   }
+
+   /* Navigation ul li*/
+  nav{
+    width: 100%;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A61723;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li{
+    max-width: 0 10px;
+  }
+  
+  li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Navbar ul transitions */
+  .color-text{
+    color: #ffff;
+    transition: color 0.3s ease;
+}
+  
+    /* Navbar hover */
+  nav a:hover {
+    background-color: #BFBFBF;
+    color: #A61723;
+  }
+
+  /* Change body color button */
+  .button-center{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .btn{
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .true-tone {
+    background-color: #f1f1f1;
+    color: #A61723;
+  }
+  
+  
+    /* h1, h2 , p */
+    .title{
+      color: #A61723;
+      text-align: center;
+      font-size: 50px;
+  }
+  
+  .center{
+      text-align: center;
+      font-size: 20px;
+  }
+
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /* Sidebar Container and main content  */
+  .sidebar-container {
+    flex: 0 0 270px; 
+    background-color: #f1f1f1;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar-container h2 {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.sidebar-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-container li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar-container a {
+    color: #A61723;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar-container a:hover {
+    text-decoration: underline;
+}
+
+/*  Sidebar buttons*/
+#textButton{
+  background: #000000;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid #BFBFBF;
+  padding: 18px;
+  box-shadow: 0 4px 8px 0 rgba(118, 118, 118, 0.2), 0 6px 20px 0 rgba(118, 118, 118, 0.19); 
+  margin-bottom: 30px;
+  margin-left: 40px;
+  color: #fff;
+}
+
+/* Anchor tag text decoration  */
+a{
+  text-decoration: none;
+  color: #A61723;
+}
+
+
+#newItemInput{
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 25px;
+    border: 1px solid rgba(169, 169, 169, 0.5);
+    box-shadow: 0 4px 8px rgba(251, 251, 251, 0.1); 
+    margin: 30px 15px 30px;
+    color: #000;
+}
+
+/*input alignment*/
+input{
+  text-align: center;
+}
+
+
+#addButton{
+    background: rgb(53, 159, 0);
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid rgb(53, 159, 0);
+    box-shadow: 0 4px 8px rgba(251, 251, 251, 0.1); 
+    margin: 1px 12px 30px;
+  
+}
+
+#removeButton{
+    background: rgb(232, 6, 6);
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid rgb(232, 6, 6);
+    box-shadow: 0 4px 8px rgba(251, 251, 251, 0.1); 
+    margin-bottom: 30px;
+    margin-right: 8px;
+}
+
+  /* back button */
+  .back-button{
+    font-size: 30px;
+     }
+
+      
+/* Article content webkit  */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column-small {
+    float: left;
+    width: 33.33%; 
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Clear floats after the columns */
+  .row-small:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h2{
+    color: #A61723;
+  }
+
+  h1{
+    color: #A61723;
+    text-align: center;
+  }
+  
+  /* Sidebar container */
+  .content {
+      display: flex;
+      align-items: stretch;
+  }
+
+   /*fontawsome i */
+   i{
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  .new{
+    color: #A61723;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  /* footer */
+  footer {
+    background-color: #A61723;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
